@@ -1,0 +1,78 @@
+/* Css para colocar un fondo que los colores vayan cambiando 
+- fue sacado de la pagina Url : https://alvarotrigo.com/blog/animated-backgrounds-css/
+y use el primer background que aparece y se incorpora aqui */
+@keyframes color {
+  0%   { background: #33CCCC; }
+  20%  { background: #33CC36; }
+  40%  { background: #B8CC33; }
+  60%  { background: #FCCA00; }
+  80%  { background: #33CC36; }
+  100% { background: #33CCCC; }
+}
+body {
+  background: #33CCCC; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+/*Media para darle responsividad a traves del css*/
+/*Documentacion : lo saque del video de youtube React tienda online de Json Dev */
+/*Url : https://www.youtube.com/watch?v=O-zxqT7RgrU */
+@media (max-width: 1200px) {
+  .lista-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .formulario-wrapper, .producto-card {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .card-text {
+    font-size: 0.9em;
+  }
+}
+
+/*Estilos para Pagination */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

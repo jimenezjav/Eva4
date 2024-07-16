@@ -1,0 +1,36 @@
+  /*-----------------------------------------------*/
+ /**
+ * Estilos utilizados en la página principal del catálogo de productos.
+ * Incluye estilos para el diseño general de la página, disposición de elementos,
+ * manejo de colores, tipografía y otros aspectos visuales.
+ */
+  .pagina-inicio-container {  /* Estilos para el contenedor principal de la página */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .filtros-container { 
+    width: 20%;
+  }
+  
+  .contenido-principal {
+    width: 75%;
+  }
+  
+  .busqueda-container {
+    margin-bottom: 20px;
+  }
+  /*Responsividad de la pagian inicio esto fue sacado como idea de una canal de youtube
+  Url : https://www.youtube.com/watch?v=O-zxqT7RgrU   pero fue modificado para el uso correcto de mi pagina de productos y de lo que yo necesitaba hacer */
+  @media (max-width: 768px) {
+    .pagina-inicio-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .filtros-container, .contenido-principal {
+      width: 100%;
+    }
+  }

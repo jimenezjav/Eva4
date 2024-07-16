@@ -1,0 +1,193 @@
+/*-----------------------------------------------*/
+/*Estilo para el Formulario */
+.formulario-container {
+    background-color: #19b765; /* Fondo verde para el contenedor */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(120, 31, 31, 0.1);
+    max-width: 500px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formulario-wrapper {
+    background-color: #e9f0ee; /* Fondo blanco para el formulario */
+    border: 1px solid #44fcec; /* Borde celestito claro */
+    padding: 20px; /* Espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente del formulario */
+  }
+  
+  .formulario-wrapper h2 {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Fuente */
+  }
+  
+  .formulario-wrapper .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .formulario-wrapper .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .formulario-wrapper .form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .formulario-wrapper button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #046247;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formulario-wrapper button:hover {
+    background-color: #248a59;
+  }
+  
+  .invalid-feedback {
+    display: block;
+    color: red;
+  }
+  
+  .is-invalid {
+    border-color: red;
+  }
+  
+  .btn-primary {
+    background-color: #346b26;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  /*Media para darle responsividad a traves del css*/
+  /*Documentacion : lo saque del video de youtube React tienda online de Json Dev */
+  /*Url : https://www.youtube.com/watch?v=O-zxqT7RgrU */
+  @media (max-width: 768px) {
+    .formulario-wrapper {
+      padding: 10px;
+    }
+  }
+  /*-----------------------------------------------*/
+  /*Estilo para la lista de productos */
+  .lista-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #060807;
+  }
+
+  
+  .producto-card {
+    background-color: #9c65d6b3;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .card-img-wrapper {
+    text-align: center;
+  }
+  
+  .card-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background-color: #039944;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  /*Media para darle responsividad a traves del css*/
+  /*Documentacion : lo saque del video de youtube React tienda online de Json Dev */
+  /*Url : https://www.youtube.com/watch?v=O-zxqT7RgrU */
+  @media (max-width: 768px) {
+    .producto-card {
+      width: 100%;
+      max-width: none;
+      margin: 5px;
+    }
+  }
+  /*-----------------------------------------------*/
+  /*Estilo para los filtros */
+  .Filtros {
+    width: 100%;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    margin-bottom: 20px; /* Espacio opcional entre la barra de filtros y el contenido */
+      
+  }
+  
+  .filtros-container {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .filtros-container input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  /*Media para darle responsividad a traves del css*/
+  /*Documentacion : lo saque del video de youtube React tienda online de Json Dev */
+  /*Url : https://www.youtube.com/watch?v=O-zxqT7RgrU */
+  @media (max-width: 600px) {
+    .filtros-container input {
+      padding: 8px;
+    }
+  }
